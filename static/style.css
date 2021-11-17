@@ -1,0 +1,17 @@
+body {
+    background-color: #dfdfdf;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(71, 71, 71);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #66806A;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+ }
+}

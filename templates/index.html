@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='login.css')}}">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="row">
+        <h1>Welcome</h1>
+        <form action="">
+        <label for="username" class="required">Username</label><br>
+        <input type="text" id="username" name="username" placeholder="Your Username" required>
+        <label for="email" class="required">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Your Gmail Account" value=""required><br>
+        <label for="password" class="required">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Your Gmail Password" value=""required><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Login">
+        <!-- <a href="">Don't have account, Register Here !</a> -->
+        </form>
+    </div>
+<div class="footer">
+    <p>Copyright by Ichan</p>
+</div>
+</body>
+</html>

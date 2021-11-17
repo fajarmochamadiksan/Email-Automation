@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='dashboard.css')}}">
+    <title>Email Automation Dashboard</title>
+</head> 
+<body>
+    <h1>Hola ! Welcome back </h1>
+    <div class="container">
+        <form action="">
+            <!-- Recipent Mail -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="recipent_mail" class="required">Recipent Mail</label>
+                </div>
+                <div class="col-2">
+                    <input type="email" id="email" name="email" placeholder="Separate mail using comma ( , )" required>
+                </div>
+            </div>
+
+            <!-- Subject -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="subject" class="required">Subject</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="text" name="text" placeholder="Mail Subject" required>
+                </div>
+            </div>
+
+            <!-- Body Message -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="body" class="required">Your Message</label>
+                </div>
+                <div class="col-2">
+                    <textarea
+                    type="body" id="body" name="body" placeholder="Minimal 10 characters" minlength="10" required></textarea><br><br>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+<div class="footer">
+    <p>Copyright by Ichan</p>
+</div>
+</body>
+</html>
