@@ -1,0 +1,29 @@
+body {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+}
+
+input[type=text], [type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: 10px;
+    margin: 10px 0px;
+    border: none;
+}
+
+input[type=password]:focus {
+    background-color: #FFF1AF;
+    border: none;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: #FFF1AF;
+    border: none;
+    outline: none;
+}
