@@ -8,16 +8,16 @@
     <title>Email Automation Dashboard</title>
 </head> 
 <body>
-    <h1>Hola ! Welcome back </h1>
+    <h1>Hola ! Welcome back {{username}}</h1>
     <div class="container">
-        <form action="">
+        <form action="/result" method="POST">
             <!-- Recipent Mail -->
             <div class="row">
                 <div class="col-1">
                     <label for="recipent_mail" class="required">Recipent Mail</label>
                 </div>
                 <div class="col-2">
-                    <input type="email" id="email" name="email" placeholder="Separate mail using comma ( , )" required>
+                    <input type="email" id="email" name="Email" placeholder="Separate mail using comma ( , )" required>
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                     <label for="subject" class="required">Subject</label>
                 </div>
                 <div class="col-2">
-                    <input type="text" id="text" name="text" placeholder="Mail Subject" required>
+                    <input type="text" id="text" name="Subject" placeholder="Mail Subject" required>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-2">
                     <textarea
-                    type="body" id="body" name="body" placeholder="Minimal 10 characters" minlength="10" required></textarea><br><br>
+                    type="text" id="body" name="Body" placeholder="Minimal 10 characters" minlength="10" required></textarea><br><br>
                 </div>
                 <div class="row">
                     <input type="submit" value="Submit">
